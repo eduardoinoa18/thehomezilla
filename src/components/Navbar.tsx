@@ -22,6 +22,12 @@ export default function Navbar() {
 
         <div className="flex items-center gap-3">
           <a
+            href="#lead-form"
+            className="rounded-full bg-[#114B5F] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#0d3b4a]"
+          >
+            Get Offer
+          </a>
+          <a
             href="tel:+19785550123"
             className="hidden items-center gap-2 rounded-full bg-[#F28F3B] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#e07f2f] sm:inline-flex"
             aria-label="Call TheHomeZilla"

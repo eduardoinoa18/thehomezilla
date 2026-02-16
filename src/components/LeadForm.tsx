@@ -226,7 +226,7 @@ export default function LeadForm() {
             type="submit"
             className="h-12 w-full rounded-xl bg-[#F28F3B] px-5 text-base font-semibold text-white shadow-sm transition hover:bg-[#e07f2f]"
           >
-            Get My Offer →
+            Get My Cash Offer -&gt;
           </button>
         </div>
         <p className="mt-3 text-center text-xs text-gray-600">

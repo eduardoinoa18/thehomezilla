@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+
 export default function Footer() {
   return (
     <footer className="bg-slate-900 text-white">
@@ -20,12 +22,11 @@ export default function Footer() {
                 </p>
               </div>
             </div>
+            <p className="text-sm text-white/70">Service States: MA & NH</p>
           </div>
 
           <div>
-            <h3 className="font-heading text-lg font-semibold">
-              Active Markets
-            </h3>
+            <h3 className="font-heading text-lg font-semibold">Active Markets</h3>
             <p className="mt-4 text-sm text-white/80">
               Buying Residential & Commercial assets across New England and
               beyond.
@@ -45,15 +46,24 @@ export default function Footer() {
             <p>
               Address: <span className="text-white">Lawrence, MA</span>
             </p>
+            <div className="flex gap-4 text-xs text-white/70">
+              <Link href="#" className="hover:text-white">
+                Privacy Policy
+              </Link>
+              <Link href="#" className="hover:text-white">
+                Terms of Service
+              </Link>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="border-t border-white/10 bg-slate-950">
         <div className="mx-auto max-w-6xl px-4 py-6 text-xs text-white/70 sm:px-6">
-          © 2026 TheHomeZilla. Disclaimer: We are a private real estate
-          investment firm. We are not real estate brokers. We buy properties for
-          our own portfolio or in partnership with our network of investors.
+           2026 TheHomeZilla. All rights reserved. Disclaimer: We are a private
+          real estate investment firm. We are not real estate brokers. We buy
+          properties for our own portfolio or in partnership with our network of
+          investors.
         </div>
       </div>
     </footer>
