@@ -1,0 +1,22 @@
+<svg width="280" height="200" viewBox="0 0 280 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky -->
+  <rect width="280" height="120" fill="#87CEEB"/>
+  <!-- Grass -->
+  <rect y="120" width="280" height="80" fill="#90EE90"/>
+  
+  <!-- Land plot with building outline -->
+  <rect x="40" y="100" width="200" height="80" fill="#CD853F" stroke="#8B4513" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Foundation -->
+  <rect x="100" y="110" width="80" height="60" fill="#D3D3D3" stroke="#999" stroke-width="1"/>
+  
+  <!-- Potential building outline -->
+  <rect x="100" y="110" width="80" height="60" fill="none" stroke="#F28F3B" stroke-width="2" stroke-dasharray="3,3" opacity="0.7"/>
+  
+  <!-- Land marker -->
+  <text x="140" y="150" font-size="12" fill="#333" text-anchor="middle" font-family="Arial" font-weight="bold">LAND</text>
+  
+  <!-- Success badge -->
+  <circle cx="240" cy="50" r="25" fill="#2196F3"/>
+  <text x="240" y="55" font-size="13" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial">READY</text>
+</svg>
