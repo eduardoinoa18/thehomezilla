@@ -2,7 +2,7 @@ import LeadForm from "./LeadForm";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[90vh] bg-[url('/hero-placeholder.svg')] bg-cover bg-center">
+    <section className="relative min-h-[90vh] bg-[url('/hero-home.svg')] bg-cover bg-center">
       <div
         className="absolute inset-0 bg-gradient-to-b from-[#0b2f3c]/70 via-[#114B5F]/70 to-[#114B5F]/80"
         aria-hidden="true"

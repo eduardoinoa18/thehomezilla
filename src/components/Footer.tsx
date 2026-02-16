@@ -47,10 +47,10 @@ export default function Footer() {
               Address: <span className="text-white">Lawrence, MA</span>
             </p>
             <div className="flex gap-4 text-xs text-white/70">
-              <Link href="#" className="hover:text-white">
+              <Link href="/privacy-policy" className="hover:text-white">
                 Privacy Policy
               </Link>
-              <Link href="#" className="hover:text-white">
+              <Link href="/terms-of-service" className="hover:text-white">
                 Terms of Service
               </Link>
             </div>

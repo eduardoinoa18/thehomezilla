@@ -5,7 +5,7 @@ export default function SchemaScript() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: "TheHomeZilla",
-    description: "We buy houses for cash in New England.",
+    description: "We buy properties for cash in New England.",
     areaServed: ["Massachusetts", "New Hampshire"],
     priceRange: "$$$",
     url: "https://thehomezilla.com",

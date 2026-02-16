@@ -2,8 +2,8 @@ export default function SchemaMarkup() {
   const schema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "TheHomeZilla - We Buy Houses MA & NH",
-    description: "Cash Home Buyers in Massachusetts and New Hampshire.",
+    name: "TheHomeZilla - We Buy Properties MA & NH",
+    description: "Cash Property Buyers in Massachusetts and New Hampshire.",
     image: "https://thehomezilla.com/Logo1.jpg",
     address: {
       "@type": "PostalAddress",

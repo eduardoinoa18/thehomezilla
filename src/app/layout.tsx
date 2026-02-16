@@ -16,21 +16,21 @@ const openSans = Open_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://thehomezilla.com"),
-  title: "Sell My House Fast MA & NH | TheHomeZilla - Cash Home Buyers",
+  title: "Sell My House Fast MA & NH | TheHomeZilla - Cash Property Buyers",
   description:
-    "Need to sell your house fast in Massachusetts or New Hampshire? We buy houses in any condition. No repairs, no fees, fair cash offers. Get your offer today.",
+    "Need to sell your house fast in Massachusetts or New Hampshire? We buy properties in any condition. No repairs, no fees, fair cash offers. Get your offer today.",
   keywords: [
     "sell house fast MA",
-    "cash home buyers NH",
-    "we buy houses Massachusetts",
-    "sell home for cash",
+    "cash property buyers NH",
+    "we buy properties Massachusetts",
+    "sell property for cash",
     "sell house as is",
   ],
   authors: [{ name: "TheHomeZilla Team" }],
   openGraph: {
-    title: "Sell My House Fast MA & NH | TheHomeZilla - Cash Home Buyers",
+    title: "Sell My House Fast MA & NH | TheHomeZilla - Cash Property Buyers",
     description:
-      "Need to sell your house fast in Massachusetts or New Hampshire? We buy houses in any condition. No repairs, no fees, fair cash offers. Get your offer today.",
+      "Need to sell your house fast in Massachusetts or New Hampshire? We buy properties in any condition. No repairs, no fees, fair cash offers. Get your offer today.",
     type: "website",
     images: [
       {

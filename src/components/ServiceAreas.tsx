@@ -15,7 +15,7 @@ export default function ServiceAreas() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl space-y-3">
           <h2 className="font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
-            We Buy Houses Throughout MA & NH
+            We Buy Properties Throughout MA & NH
           </h2>
           <p className="text-base text-[#45494E] sm:text-lg">
             From city centers to small towns, we cover Massachusetts and New
