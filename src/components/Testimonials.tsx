@@ -52,10 +52,10 @@ export default function Testimonials() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl space-y-3">
           <h2 className="font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
-            What Our Clients Say
+            What Property Sellers Are Saying
           </h2>
           <p className="text-base text-[#45494E] sm:text-lg">
-            Trusted by homeowners across Massachusetts and New Hampshire.
+            Real testimonials from property sellers across Massachusetts and New Hampshire.
           </p>
         </div>
 

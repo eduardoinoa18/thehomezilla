@@ -7,7 +7,6 @@ import Navbar from "@/components/Navbar";
 import PropertyTypes from "@/components/PropertyTypes";
 import SchemaMarkup from "@/components/SchemaMarkup";
 import ServiceAreas from "@/components/ServiceAreas";
-import SuccessStories from "@/components/SuccessStories";
 import Testimonials from "@/components/Testimonials";
 import TrustIndicators from "@/components/TrustIndicators";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -25,7 +24,6 @@ export default function Home() {
         <ComparisonTable />
         <HowItWorks />
         <Testimonials />
-        <SuccessStories />
         <MidPageLeadForm />
         <ServiceAreas />
       </main>
