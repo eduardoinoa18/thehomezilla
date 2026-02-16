@@ -46,6 +46,12 @@ export default function Footer() {
             <p>
               Address: <span className="text-white">Lawrence, MA</span>
             </p>
+            <div className="mt-4 rounded-lg bg-white/10 p-3">
+              <p className="text-xs font-semibold text-[#F28F3B]">🌐 MULTILINGUAL SUPPORT</p>
+              <p className="text-xs text-white/90 mt-1">
+                We speak English, Spanish & Portuguese
+              </p>
+            </div>
             <div className="flex gap-4 text-xs text-white/70">
               <Link href="/privacy-policy" className="hover:text-white">
                 Privacy Policy

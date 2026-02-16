@@ -15,9 +15,12 @@ export default function Navbar() {
             priority
             className="h-14 w-14 rounded-2xl object-cover shadow-md ring-2 ring-[#114B5F]/25 sm:h-16 sm:w-16"
           />
-          <span className="font-heading text-2xl font-extrabold tracking-tight text-[#114B5F] sm:text-3xl">
-            TheHomeZilla
-          </span>
+          <div>
+            <span className="font-heading text-2xl font-extrabold tracking-tight text-[#114B5F] sm:text-3xl">
+              TheHomeZilla
+            </span>
+            <p className="text-xs text-gray-600 font-medium">🌐 English • Español • Português</p>
+          </div>
         </Link>
 
         <div className="flex items-center gap-3">
