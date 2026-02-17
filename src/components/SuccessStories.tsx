@@ -27,15 +27,21 @@ const successStories = [
   },
 ];
 
+const delayClasses = [
+  "[animation-delay:0.12s]",
+  "[animation-delay:0.2s]",
+  "[animation-delay:0.28s]",
+];
+
 export default function SuccessStories() {
   return (
-    <section className="bg-gradient-to-b from-[#F9FAFB] to-white py-16">
+    <section className="bg-linear-to-b from-[#F9FAFB] to-white py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="mb-12 max-w-2xl space-y-3">
-          <h2 className="font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
+          <h2 className="reveal-up font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
             Recent Success Stories
           </h2>
-          <p className="text-base text-[#45494E] sm:text-lg">
+          <p className="reveal-up reveal-delay-1 text-base text-[#45494E] sm:text-lg">
             Real results from real homeowners and property owners across MA & NH.
           </p>
         </div>
@@ -44,7 +50,7 @@ export default function SuccessStories() {
           {successStories.map((story, idx) => (
             <div
               key={idx}
-              className="group overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
+              className={`reveal-up ${delayClasses[idx % delayClasses.length]} group overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl`}
             >
               {/* Image Container */}
               <div className="relative h-48 w-full overflow-hidden bg-gray-100">
@@ -71,7 +77,7 @@ export default function SuccessStories() {
                   {story.description}
                 </p>
 
-                <div className="rounded-lg bg-gradient-to-r from-[#114B5F]/5 to-[#F28F3B]/5 p-4">
+                <div className="rounded-lg bg-linear-to-r from-[#114B5F]/5 to-[#F28F3B]/5 p-4">
                   <p className="text-xs text-gray-600 font-medium">
                     COMMISSION SAVED
                   </p>
@@ -90,7 +96,7 @@ export default function SuccessStories() {
         </div>
 
         {/* CTA */}
-        <div className="mt-12 rounded-2xl bg-gradient-to-r from-[#114B5F] to-[#0f3a4d] p-8 text-center">
+        <div className="reveal-up mt-12 rounded-2xl bg-linear-to-r from-[#114B5F] to-[#0f3a4d] p-8 text-center">
           <h3 className="text-2xl font-bold text-white">
             Get Your Free Cash Offer Today
           </h3>
@@ -103,7 +109,7 @@ export default function SuccessStories() {
                 behavior: "smooth",
               })
             }
-            className="mt-6 inline-block rounded-xl bg-[#F28F3B] px-8 py-3 font-semibold text-white hover:bg-[#E07C2C] transition-colors"
+            className="cta-glow mt-6 inline-block rounded-xl bg-[#F28F3B] px-8 py-3 font-semibold text-white transition duration-300 hover:-translate-y-0.5 hover:bg-[#E07C2C]"
           >
             Get My Offer Now
           </button>

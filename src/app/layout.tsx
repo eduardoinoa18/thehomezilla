@@ -27,11 +27,19 @@ export const metadata: Metadata = {
     "sell house as is",
   ],
   authors: [{ name: "TheHomeZilla Team" }],
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
     title: "Sell My House Fast MA & NH | TheHomeZilla - Cash Property Buyers",
     description:
       "Need to sell your house fast in Massachusetts or New Hampshire? We buy properties in any condition. No repairs, no fees, fair cash offers. Get your offer today.",
     type: "website",
+    url: "https://thehomezilla.com",
     images: [
       {
         url: "/Logo1.jpg",
@@ -40,6 +48,13 @@ export const metadata: Metadata = {
         alt: "TheHomeZilla",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sell My House Fast MA & NH | TheHomeZilla",
+    description:
+      "Get a fair cash offer in 24 hours. No repairs, no fees, and close on your timeline.",
+    images: ["/Logo1.jpg"],
   },
 };
 

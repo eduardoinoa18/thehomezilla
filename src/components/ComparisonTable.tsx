@@ -16,20 +16,20 @@ const zillaPoints = [
 
 export default function ComparisonTable() {
   return (
-    <section className="bg-[#F9FAFB] py-16">
+    <section className="section-shine bg-[#F9FAFB] py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl space-y-3">
-          <h2 className="font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
+          <h2 className="reveal-up font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
             The Easiest Way to Sell Any Property
           </h2>
-          <p className="text-base text-[#45494E] sm:text-lg">
+          <p className="reveal-up reveal-delay-1 text-base text-[#45494E] sm:text-lg">
             Compare the traditional listing path to a direct, no-stress cash
             offer.
           </p>
         </div>
 
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          <div className="rounded-2xl bg-slate-100 p-6 shadow-lg">
+          <div className="reveal-up rounded-2xl bg-slate-100 p-6 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl">
             <h3 className="font-heading text-lg font-semibold text-slate-700">
               Traditional Listing
             </h3>
@@ -43,7 +43,7 @@ export default function ComparisonTable() {
             </ul>
           </div>
 
-          <div className="rounded-2xl border border-teal-700 bg-white p-6 shadow-lg md:scale-105">
+          <div className="reveal-up [animation-delay:0.18s] rounded-2xl border border-teal-700 bg-white p-6 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl md:scale-105">
             <h3 className="font-heading text-lg font-semibold text-[#114B5F]">
               TheHomeZilla Advantage
             </h3>

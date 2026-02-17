@@ -46,22 +46,34 @@ const testimonials = [
   },
 ];
 
+const delayClasses = [
+  "[animation-delay:0.12s]",
+  "[animation-delay:0.2s]",
+  "[animation-delay:0.28s]",
+  "[animation-delay:0.36s]",
+  "[animation-delay:0.44s]",
+  "[animation-delay:0.52s]",
+];
+
 export default function Testimonials() {
   return (
     <section className="bg-white py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl space-y-3">
-          <h2 className="font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
+          <h2 className="reveal-up font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
             What Property Sellers Are Saying
           </h2>
-          <p className="text-base text-[#45494E] sm:text-lg">
+          <p className="reveal-up reveal-delay-1 text-base text-[#45494E] sm:text-lg">
             Real testimonials from property sellers across Massachusetts and New Hampshire.
           </p>
         </div>
 
         <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-          {testimonials.map((item) => (
-            <div key={item.name} className="rounded-2xl bg-gradient-to-br from-[#F9FAFB] to-[#FFFFFF] p-8 shadow-lg hover:shadow-xl transition-shadow border border-gray-100">
+          {testimonials.map((item, index) => (
+            <div
+              key={item.name}
+              className={`reveal-up ${delayClasses[index % delayClasses.length]} rounded-2xl border border-gray-100 bg-linear-to-br from-[#F9FAFB] to-[#FFFFFF] p-8 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl`}
+            >
               <div className="flex gap-1 text-amber-400">
                 {Array.from({ length: 5 }).map((_, index) => (
                   <Star key={index} className="h-4 w-4 fill-current" />
@@ -70,7 +82,7 @@ export default function Testimonials() {
               <p className="mt-4 text-sm leading-relaxed text-gray-700">"{item.quote}"</p>
               
               <div className="mt-6 flex items-center gap-3">
-                <div className="relative h-12 w-12 flex-shrink-0">
+                <div className="relative h-12 w-12 shrink-0">
                   <Image
                     src={item.avatar}
                     alt={item.name}

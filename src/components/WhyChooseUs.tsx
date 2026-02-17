@@ -30,13 +30,13 @@ const benefits = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="bg-white py-16">
+    <section className="section-shine bg-white py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl space-y-3">
-          <h2 className="font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
+          <h2 className="reveal-up font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
             Why Homeowners in MA & NH Choose Us
           </h2>
-          <p className="text-base text-[#45494E] sm:text-lg">
+          <p className="reveal-up reveal-delay-1 text-base text-[#45494E] sm:text-lg">
             Local buyers focused on speed, clarity, and real solutions.
           </p>
         </div>
@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
           {benefits.map((benefit) => (
             <div
               key={benefit.title}
-              className="rounded-2xl bg-[#F9FAFB] p-6 shadow-lg"
+              className="reveal-up rounded-2xl bg-[#F9FAFB] p-6 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white shadow-sm">
                 <benefit.icon className="h-6 w-6 text-[#114B5F]" />
@@ -61,7 +61,7 @@ export default function WhyChooseUs() {
         <div className="mt-8">
           <a
             href="#lead-form"
-            className="inline-flex items-center rounded-full bg-[#F28F3B] px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-[#e07f2f]"
+            className="cta-glow inline-flex items-center rounded-full bg-[#F28F3B] px-6 py-3 text-sm font-semibold text-white shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-[#e07f2f]"
           >
             Get My Cash Offer -&gt;
           </a>

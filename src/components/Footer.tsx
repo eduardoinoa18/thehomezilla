@@ -31,6 +31,11 @@ export default function Footer() {
               Buying Residential & Commercial assets across New England and
               beyond.
             </p>
+            <div className="mt-4 text-sm text-white/80">
+              <Link href="/we-buy-houses-ma-nh" className="hover:text-white">
+                We Buy Houses in MA & NH
+              </Link>
+            </div>
           </div>
 
           <div className="space-y-3 text-sm text-white/80">
@@ -49,7 +54,7 @@ export default function Footer() {
             <div className="mt-4 rounded-lg bg-white/10 p-3">
               <p className="text-xs font-semibold text-[#F28F3B]">🌐 MULTILINGUAL SUPPORT</p>
               <p className="text-xs text-white/90 mt-1">
-                We speak English, Spanish & Portuguese
+                We speak English, Spanish, Portuguese & Italian
               </p>
             </div>
             <div className="flex gap-4 text-xs text-white/70">

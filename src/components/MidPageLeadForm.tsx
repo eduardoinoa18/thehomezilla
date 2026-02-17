@@ -60,14 +60,14 @@ export default function MidPageLeadForm() {
   };
 
   return (
-    <section className="bg-white py-16">
+    <section id="lead-form-secondary" className="section-shine bg-white py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="rounded-3xl bg-[#F9FAFB] p-8 shadow-xl md:p-10">
           <div className="max-w-2xl space-y-3">
-            <h2 className="font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
+            <h2 className="reveal-up font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
               Get Your No-Obligation Cash Offer Today
             </h2>
-            <p className="text-base text-[#45494E] sm:text-lg">
+            <p className="reveal-up reveal-delay-1 text-base text-[#45494E] sm:text-lg">
               Tell us a little about the property and we will respond quickly.
             </p>
           </div>
@@ -77,7 +77,7 @@ export default function MidPageLeadForm() {
               Thanks. We received your request and will contact you shortly.
             </p>
           ) : (
-            <form onSubmit={handleSubmit} className="mt-6 grid gap-4 md:grid-cols-2">
+            <form onSubmit={handleSubmit} className="reveal-up reveal-delay-2 mt-6 grid gap-4 md:grid-cols-2">
               <input
                 type="text"
                 placeholder="Full Name *"
@@ -116,7 +116,7 @@ export default function MidPageLeadForm() {
               <button
                 type="submit"
                 disabled={loading}
-                className="h-12 rounded-xl bg-[#F28F3B] px-6 text-base font-semibold text-white shadow-sm transition hover:bg-[#e07f2f] disabled:opacity-50 md:col-span-2"
+                className="cta-glow h-12 rounded-xl bg-[#F28F3B] px-6 text-base font-semibold text-white shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-[#e07f2f] disabled:opacity-50 md:col-span-2"
               >
                 {loading ? "Sending..." : "Get My Offer Now"}
               </button>

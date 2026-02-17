@@ -18,18 +18,24 @@ const steps = [
   },
 ];
 
+const delayClasses = [
+  "[animation-delay:0.12s]",
+  "[animation-delay:0.2s]",
+  "[animation-delay:0.28s]",
+];
+
 export default function HowItWorks() {
   return (
-    <section className="bg-[#F9FAFB] py-16">
+    <section className="section-shine bg-[#F9FAFB] py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
-        <h2 className="font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
+        <h2 className="reveal-up font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
           Simple 3-Step Process
         </h2>
         <div className="relative mt-8 grid grid-cols-1 gap-6 md:grid-cols-3">
-          {steps.map((step) => (
+          {steps.map((step, index) => (
             <div
               key={step.title}
-              className="rounded-2xl bg-white p-6 text-center shadow-lg"
+              className={`reveal-up ${delayClasses[index % delayClasses.length]} rounded-2xl bg-white p-6 text-center shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl`}
             >
               <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-xl bg-slate-100">
                 <step.icon className="h-6 w-6 text-[#114B5F]" />
@@ -42,10 +48,10 @@ export default function HowItWorks() {
           ))}
 
           <div className="pointer-events-none absolute left-1/3 top-1/2 hidden -translate-y-1/2 md:flex">
-            <ArrowRight className="h-6 w-6 text-[#114B5F]/40" />
+            <ArrowRight className="h-6 w-6 text-[#114B5F]/40 animate-pulse-soft" />
           </div>
           <div className="pointer-events-none absolute left-2/3 top-1/2 hidden -translate-y-1/2 md:flex">
-            <ArrowRight className="h-6 w-6 text-[#114B5F]/40" />
+            <ArrowRight className="h-6 w-6 text-[#114B5F]/40 animate-pulse-soft" />
           </div>
         </div>
       </div>

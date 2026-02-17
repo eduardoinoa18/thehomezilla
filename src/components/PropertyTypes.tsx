@@ -23,25 +23,32 @@ const types = [
   },
 ];
 
+const delayClasses = [
+  "[animation-delay:0.12s]",
+  "[animation-delay:0.2s]",
+  "[animation-delay:0.28s]",
+  "[animation-delay:0.36s]",
+];
+
 export default function PropertyTypes() {
   return (
     <section className="bg-white py-16">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <div className="max-w-2xl space-y-3">
-          <h2 className="font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
+          <h2 className="reveal-up font-heading text-3xl font-extrabold text-[#114B5F] sm:text-4xl">
             We See Value Where Others Don&apos;t
           </h2>
-          <p className="text-base text-[#45494E] sm:text-lg">
+          <p className="reveal-up reveal-delay-1 text-base text-[#45494E] sm:text-lg">
             From cozy homes to complex commercial buildings, we create exit
             strategies for any asset.
           </p>
         </div>
 
         <div className="mt-8 grid gap-6 md:grid-cols-2">
-          {types.map((type) => (
+          {types.map((type, index) => (
             <div
               key={type.title}
-              className="rounded-2xl border border-slate-100 bg-[#F9FAFB] p-6 shadow-lg"
+              className={`reveal-up ${delayClasses[index % delayClasses.length]} rounded-2xl border border-slate-100 bg-[#F9FAFB] p-6 shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-xl`}
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-white shadow-sm">
                 <type.icon className="h-6 w-6 text-[#114B5F]" />

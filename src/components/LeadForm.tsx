@@ -190,7 +190,7 @@ export default function LeadForm() {
           <button
             type="submit"
             disabled={loading}
-            className="h-12 w-full rounded-xl bg-[#114B5F] px-5 text-base font-semibold text-white shadow-sm transition hover:bg-[#0d3b4a] disabled:opacity-50"
+            className="h-12 w-full rounded-xl bg-[#114B5F] px-5 text-base font-semibold text-white shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-[#0d3b4a] disabled:opacity-50"
           >
             {loading ? "Sending..." : "Lock In My Offer"}
           </button>
@@ -224,7 +224,7 @@ export default function LeadForm() {
           )}
           <button
             type="submit"
-            className="h-12 w-full rounded-xl bg-[#F28F3B] px-5 text-base font-semibold text-white shadow-sm transition hover:bg-[#e07f2f]"
+            className="cta-glow h-12 w-full rounded-xl bg-[#F28F3B] px-5 text-base font-semibold text-white shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-[#e07f2f]"
           >
             Get My Cash Offer -&gt;
           </button>

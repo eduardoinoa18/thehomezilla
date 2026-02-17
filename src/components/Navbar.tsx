@@ -19,14 +19,14 @@ export default function Navbar() {
             <span className="font-heading text-2xl font-extrabold tracking-tight text-[#114B5F] sm:text-3xl">
               TheHomeZilla
             </span>
-            <p className="text-xs text-gray-600 font-medium">🌐 English • Español • Português</p>
+            <p className="text-xs text-gray-600 font-medium">🌐 English • Español • Português • Italiano</p>
           </div>
         </Link>
 
         <div className="flex items-center gap-3">
           <a
             href="#lead-form"
-            className="rounded-full bg-[#114B5F] px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-[#0d3b4a]"
+            className="cta-glow rounded-full bg-[#114B5F] px-4 py-2 text-sm font-semibold text-white shadow-sm transition duration-300 hover:-translate-y-0.5 hover:bg-[#0d3b4a]"
           >
             Get Offer
           </a>

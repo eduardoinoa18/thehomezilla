@@ -1,5 +1,6 @@
 import ComparisonTable from "@/components/ComparisonTable";
 import Footer from "@/components/Footer";
+import FaqSection from "@/components/FaqSection";
 import Hero from "@/components/Hero";
 import HowItWorks from "@/components/HowItWorks";
 import MidPageLeadForm from "@/components/MidPageLeadForm";
@@ -24,6 +25,7 @@ export default function Home() {
         <ComparisonTable />
         <HowItWorks />
         <Testimonials />
+        <FaqSection />
         <MidPageLeadForm />
         <ServiceAreas />
       </main>
